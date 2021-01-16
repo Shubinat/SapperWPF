@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Saper.Cell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Saper"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100">
+    <Grid x:Name="CellGrid">
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" x:Name="CellText"></TextBlock>
+        <Image Source="Assets/mine.png" Name="CellImg" Visibility="Hidden"></Image>
+        <Image Source="Assets/exploded_mine.png" Name="ExplodedMineImg" Visibility="Hidden"></Image>
+        <Image Source="Assets/defused_mine.png" Name="DefusedMineImg" Visibility="Hidden"></Image>
+        <Button Click="OnClick" x:Name="CellButton"></Button>
+        <Border BorderThickness="1" BorderBrush="LightGray"></Border>
+    </Grid>
+</UserControl>
